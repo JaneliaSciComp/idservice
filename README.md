@@ -6,13 +6,13 @@ idservice
 
 Returns unique version ids via various protocols.
 
-[X]HTTP
-[]gRPC
-[]zeromq
+- [x] HTTP
+- [ ] gRPC
+- [ ] zeromq
 
 ### HTTP example
 
-    % idserver http -p :8000 -w /path/to/workdir
+    % idservice http -p :8000 -w /path/to/workdir
 
 To use, the client sends a POST request with an optional count:
 
@@ -30,9 +30,11 @@ To use, the client sends a POST request with an optional count:
 
 If you have Go installed, you can install idserver with:
 
-    % go install github.com/JaneliaSciComp/idservice
+    % go install github.com/JaneliaSciComp/idservice@latest
 
 Or you can build from source:
 
     % go get github.com/JaneliaSciComp/idservice
     % go build
+
+    % idservice --help
