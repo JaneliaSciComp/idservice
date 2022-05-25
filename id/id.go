@@ -29,6 +29,10 @@ func LoadID(path string) error {
 	filePath = filepath.Join(path, idFileName)
 	file, err := os.OpenFile(filePath, os.O_RDONLY, 0644)
 	if err != nil {
+		if os.IsNotExist(err) {
+			log.Printf("No id file @ %q found.  Starting with new id set.\n", filePath)
+			return nil
+		}
 		return fmt.Errorf("couldn't open id file %q: %v", filePath, err)
 	}
 	defer file.Close()
