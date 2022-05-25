@@ -1,7 +1,5 @@
-// Package id provides unique uint64 identifiers for datasets designated by a string.
-// The uint64 identifiers start at 1 for a new dataset and are monotonically increasing,
-// persisting through restarts of the server.  The package also allows retrieving
-// data associated with the id like a user and branch string.
+// Package id provides unique uint64 identifiers.  The id is monotonically
+// increasing, persisting through restarts of the server.
 package id
 
 import (

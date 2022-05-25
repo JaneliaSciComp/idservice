@@ -1,7 +1,6 @@
 idservice
 ====
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/JaneliaSciComp/idservice)](https://goreportcard.com/report/github.com/JaneliaSciComp/idservice)
 [![GoDoc](https://godoc.org/github.com/JaneliaSciComp/idservice?status.png)](https://godoc.org/github.com/JaneliaSciComp/idservice) 
 
 Returns unique version ids via various protocols.
@@ -30,11 +29,10 @@ To use, the client sends a POST request with an optional count:
 
 If you have Go installed, you can install `idservice` with:
 
-    % go install github.com/JaneliaSciComp/idservice@latest
+    go install github.com/JaneliaSciComp/idservice@latest
 
-Or you can build from source:
+This will install the `idservice` executable in `$GOPATH/bin` or `$GOBIN`
+or by default in `~/go/bin` if neither is set.
 
-    % go get github.com/JaneliaSciComp/idservice
-    % go build
-
-    % idservice --help
+Or you can build from source by cloning the repo, changing into its directory,
+and running a `go build`.
