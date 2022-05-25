@@ -28,7 +28,7 @@ To use, the client sends a POST request with an optional count:
 
 ### Installation
 
-If you have Go installed, you can install idserver with:
+If you have Go installed, you can install `idservice` with:
 
     % go install github.com/JaneliaSciComp/idservice@latest
 
