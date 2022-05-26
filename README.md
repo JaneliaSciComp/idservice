@@ -11,9 +11,15 @@ Returns unique version ids via various protocols.
 
 ### HTTP example
 
-    % idservice http -p :8000 -w /path/to/workdir
+Start HTTP service:
 
-To use, the client sends a POST request with an optional count:
+    idservice http
+
+or specify port and working directly explicity
+
+    idservice http -p :8000 -w /path/to/id-file-dir
+
+To obtain ids, the client sends a POST request with an optional count:
 
     POST /v1/id
 
@@ -27,7 +33,10 @@ To use, the client sends a POST request with an optional count:
 
 ### Installation
 
-If you have Go installed, you can install `idservice` with:
+Download the [latest binary executable releases](https://github.com/JaneliaSciComp/idservice/releases/latest)
+for your platform.
+
+Alternatively, if you have Go installed, you can install `idservice` with:
 
     go install github.com/JaneliaSciComp/idservice@latest
 
