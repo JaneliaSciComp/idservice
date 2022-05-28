@@ -1,6 +1,6 @@
 idservice
 ====
-
+[![Go Report Card](https://goreportcard.com/badge/github.com/JaneliaSciComp/idservice)](https://goreportcard.com/report/github.com/JaneliaSciComp/idservice)
 [![GoDoc](https://godoc.org/github.com/JaneliaSciComp/idservice?status.png)](https://godoc.org/github.com/JaneliaSciComp/idservice) 
 
 Returns unique version ids via various protocols.
